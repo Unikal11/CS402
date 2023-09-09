@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Qeydiyyat Forması</title>
+</head>
+<body>
+    <h1>Qeydiyyat Forması</h1>
+    <form action="qeydiyyat.php" method="POST">
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" required><br><br>
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" required><br><br>
+
+        <label for="yas">Yaş:</label>
+        <input type="number" id="yas" name="yas" required><br><br>
+
+        <label for="sifre">Şifrə:</label>
+        <input type="password" id="sifre" name="sifre" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="cins">Cins:</label>
+        <select id="cins" name="cins" required>
+            <option value="kisi">Kişi</option>
+            <option value="qadin">Qadın</option>
+        </select><br><br>
+
+        <label for="hobiler">Hobbilər:</label><br>
+        <input type="checkbox" id="hobi1" name="hobiler[]" value="Musiqi">
+        <label for="hobi1">Musiqi</label><br>
+        <input type="checkbox" id="hobi2" name="hobiler[]" value="Spor">
+        <label for="hobi2">idman</label><br>
+        <input type="checkbox" id="hobi3" name="hobiler[]" value="Rəssamlıq">
+        <label for="hobi3">Şahmat</label><br>
+        <!-- Daha çox hobbilər əlavə edə bilərsiniz -->
+
+        <br><br>
+        <input type="submit" value="Qeydiyyat">
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
